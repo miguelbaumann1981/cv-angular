@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
@@ -39,7 +40,8 @@ import { MenuService } from './services/menu.service';
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgxPageScrollCoreModule.forRoot({ duration: 1600 })
   ],
   providers: [
     MenuService

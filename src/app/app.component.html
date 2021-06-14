@@ -1,6 +1,12 @@
 
 <div class="layout">
-
-  <app-menu></app-menu>
-  <router-outlet></router-outlet>
+  <ul class="menu">
+    <li><a pageScroll href="#landing"><i class="fas fa-times"></i> landing</a></li>
+    <li><a pageScroll href="#profile"><i class="fas fa-times"></i> profile</a></li>
+    <li><a pageScroll href="#contact"><i class="fas fa-times"></i> contact</a></li>
+  </ul>
+  <!-- <app-menu></app-menu> -->
+    <landing-page id="landing"></landing-page>
+    <profile-page id="profile"></profile-page>
+    <contact-page id="contact"></contact-page>
 </div>

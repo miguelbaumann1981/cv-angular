@@ -28,7 +28,7 @@ export class MenuService {
               }),
               new MenuOption({
                 icon: 'fas fa-cog',
-                title: 'menu.configEvent',
+                title: 'Contacto',
                 subtext: 'dashboardPage.eventConfigDesc',
                 url: '/contact',
                 img: 'config-event.jpg',
