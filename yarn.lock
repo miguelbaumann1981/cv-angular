@@ -118,6 +118,15 @@
   dependencies:
     tslib "^1.9.0"
 
+"@angular/cdk@~8.2.3":
+  version "8.2.3"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@angular/cdk/-/cdk-8.2.3.tgz#16b96ffa935cbf5a646757ecaf2b19c434678f72"
+  integrity sha1-Frlv+pNcv1pkZ1fsrysZxDRnj3I=
+  dependencies:
+    tslib "^1.7.1"
+  optionalDependencies:
+    parse5 "^5.0.0"
+
 "@angular/cli@~8.3.25":
   version "8.3.29"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@angular/cli/-/cli-8.3.29.tgz#481eb04a8240932adfb19049a5fb524f85453037"
@@ -192,6 +201,13 @@
   version "8.2.14"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@angular/language-service/-/language-service-8.2.14.tgz#e18b27a6841577ce489ad31540150da5a444ca37"
   integrity sha1-4YsnpoQVd85ImtMVQBUNpaREyjc=
+
+"@angular/material@8.2.3":
+  version "8.2.3"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@angular/material/-/material-8.2.3.tgz#16543e4e06a3fde2651a25cfe126e88e714ae105"
+  integrity sha1-FlQ+Tgaj/eJlGiXP4SbojnFK4QU=
+  dependencies:
+    tslib "^1.7.1"
 
 "@angular/platform-browser-dynamic@~8.2.14":
   version "8.2.14"
@@ -3655,6 +3671,11 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/graceful-fs/-/graceful-fs-4.2.6.tgz#ff040b2b0853b23c3d31027523706f1885d76bee"
   integrity sha1-/wQLKwhTsjw9MQJ1I3BvGIXXa+4=
 
+hammerjs@^2.0.8:
+  version "2.0.8"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/hammerjs/-/hammerjs-2.0.8.tgz#04ef77862cff2bb79d30f7692095930222bf60f1"
+  integrity sha1-BO93hiz/K7edMPdpIJWTAiK/YPE=
+
 handle-thing@^2.0.0:
   version "2.0.1"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/handle-thing/-/handle-thing-2.0.1.tgz#857f79ce359580c340d43081cc648970d0bb234e"
@@ -5807,6 +5828,11 @@ parse5@4.0.0:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/parse5/-/parse5-4.0.0.tgz#6d78656e3da8d78b4ec0b906f7c08ef1dfe3f608"
   integrity sha1-bXhlbj2o14tOwLkG98CO8d/j9gg=
 
+parse5@^5.0.0:
+  version "5.1.1"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/parse5/-/parse5-5.1.1.tgz#f68e4e5ba1852ac2cadc00f4555fff6c2abb6178"
+  integrity sha1-9o5OW6GFKsLK3AD0VV//bCq7YXg=
+
 parseqs@0.0.5:
   version "0.0.5"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/parseqs/-/parseqs-0.0.5.tgz#d5208a3738e46766e291ba2ea173684921a8b89d"
@@ -7570,7 +7596,7 @@ tslib@1.10.0:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
   integrity sha1-w8GflZc/sKYpc/sJ2Q2WHuQ+XIo=
 
-tslib@^1.10.0, tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
+tslib@^1.10.0, tslib@^1.7.1, tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.14.1"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha1-zy04vcNKE0vK8QkcQfZhni9nLQA=

@@ -15,6 +15,7 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 // COMPONENTES
 import { MenuComponent } from './components/menu/menu.component';
 import { ProgressSkillComponent } from './components/progress-skill/progress-skill.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -32,7 +33,8 @@ import { ProgressSkillComponent } from './components/progress-skill/progress-ski
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
