@@ -9,6 +9,15 @@ body {
   height: 100%; 
   overflow: auto;
   min-width: auto !important;
+  padding-left: 17rem;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.page {
+  padding: 20px;
+  background-color: #eee;
+  border: 1px solid green;
+  width: auto;
+  min-height: 100vh;
+}
+

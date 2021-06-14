@@ -1,4 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { MenuService } from '../../services/menu.service';
+import { MenuOption } from '../../models/menuOption.model';
 
 @Component({
   selector: 'app-menu',
@@ -8,9 +10,16 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  options: MenuOption[] = [];
+
+  constructor(public menuService: MenuService) { }
+
+  async getOptions() {
+    this.options = await this.menuService.getLeftOptions();
+  }
 
   ngOnInit() {
+    this.getOptions();
   }
 
 }

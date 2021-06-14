@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 
 // PÁGINAS
@@ -16,6 +17,9 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import { MenuComponent } from './components/menu/menu.component';
 import { ProgressSkillComponent } from './components/progress-skill/progress-skill.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+// SERVICIOS
+import { MenuService } from './services/menu.service';
 
 
 
@@ -34,9 +38,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [
+    MenuService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

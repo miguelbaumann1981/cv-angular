@@ -1,10 +1,11 @@
 <div class="container">
 
   
-  <p>menu works!</p>
-  <p>menu works!</p>
-  <p>menu works!</p>
-  <p>menu works!</p>
-  <p>menu works!</p>
+  <ul *ngFor="let item of options">
+    <li (click)="menuService.navigate(item)">
+      <i class="{{item.icon}}"></i>
+      {{item.title}}
+    </li>
+  </ul>
   
 </div>
