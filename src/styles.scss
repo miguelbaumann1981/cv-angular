@@ -1,3 +1,6 @@
+@import './app/scss/variables.scss';
+@import './app/scss/pages.scss';
+
 html, body {
   margin: 0; 
   font-size: 16px;
@@ -13,13 +16,7 @@ body {
   font-family: 'Raleway', sans-serif;;
 }
 
-.page {
-  padding: 20px 50px;
-  background-color: #eee;
-  border: 1px solid green;
-  width: auto;
-  min-height: 100vh;
-}
+
 
 
 

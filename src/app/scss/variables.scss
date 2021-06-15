@@ -1,0 +1,13 @@
+// Colores
+$blackCorp: #212426;
+$redCorp: #690C07;
+$greyCorp: #6E7074;
+
+$sidebar-base-width: 17rem;
+
+%transition-app {
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}

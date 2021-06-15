@@ -8,6 +8,11 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class ProfilePageComponent implements OnInit {
 
+  titlePage = {
+    icon: 'fas fa-times',
+    text: 'Perfil'
+  }
+
   constructor() { }
 
   ngOnInit() {

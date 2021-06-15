@@ -21,6 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // SERVICIOS
 import { MenuService } from './services/menu.service';
+import { PageTitleComponent } from './components/page-title/page-title.component';
 
 
 
@@ -34,7 +35,8 @@ import { MenuService } from './services/menu.service';
     SkillsPageComponent,
     ContactPageComponent,
     MenuComponent,
-    ProgressSkillComponent
+    ProgressSkillComponent,
+    PageTitleComponent
   ],
   imports: [
     BrowserModule,
