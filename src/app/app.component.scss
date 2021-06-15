@@ -1,4 +1,53 @@
 .layout {
-  
   height: 100vh;
+  .menu {
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      width: 17rem;
+      height: 100vh;
+      background-color: #212426;
+      color: #fff;
+      margin: 0;
+      padding: 2rem 1rem;
+      list-style: none;
+      li {
+        margin: 20px 0;
+        a {
+          text-decoration: none;
+          cursor: pointer;
+          &.links {
+            color: #ccc;
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            span {
+              font-size: 1.15rem;
+              margin-top: 0.5rem;
+            }
+            &:hover {
+              color: #fff;
+            }
+          }
+          &.photo {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            img {
+              max-width: 10rem;
+              max-height: 10rem;
+              border: 0.5rem solid rgba(255, 255, 255, 0.2);
+              border-radius: 50%;
+            }
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+  }
 }

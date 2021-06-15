@@ -8,10 +8,6 @@ export class MenuOption {
     
     public options: MenuOption[];
     public title: string;
-    public subtext?: string;
     public icon: string;
-    public url?: string;
-    public img?: string;
-    public alt?: string;
-    public componentName?: string;
+    public href: string;
 }

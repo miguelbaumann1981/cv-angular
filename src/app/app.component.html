@@ -1,12 +1,24 @@
 
 <div class="layout">
   <ul class="menu">
-    <li><a pageScroll href="#landing"><i class="fas fa-times"></i> landing</a></li>
-    <li><a pageScroll href="#profile"><i class="fas fa-times"></i> profile</a></li>
-    <li><a pageScroll href="#contact"><i class="fas fa-times"></i> contact</a></li>
+    <li>
+      <a class="photo" pageScroll href="#landing">
+        <img src="../assets/images/foto-cv.jpg" alt="Foto Miguel Baumann">
+      </a>
+    </li>
+    <li *ngFor="let item of options">
+      <a class="links" pageScroll href="#{{item.href}}">
+        <i class="{{item.icon}}"></i> 
+        <span>{{item.title}}</span>
+      </a>
+    </li>
   </ul>
-  <!-- <app-menu></app-menu> -->
-    <landing-page id="landing"></landing-page>
-    <profile-page id="profile"></profile-page>
-    <contact-page id="contact"></contact-page>
+
+
+  <landing-page id="landing"></landing-page>
+  <profile-page id="profile"></profile-page>
+  <experience-page id="experience"></experience-page>
+  <education-page id="education"></education-page>
+  <skills-page id="skills"></skills-page>
+  <contact-page id="contact"></contact-page>
 </div>
