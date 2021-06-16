@@ -1,3 +1,5 @@
+@import './scss/variables.scss';
+
 .layout {
   height: 100vh;
   .menu {
@@ -7,9 +9,9 @@
       left: 0;
       display: flex;
       flex-direction: column;
-      width: 17rem;
+      width: $menuWidth;
       height: 100vh;
-      background-color: #212426;
+      background-color: $secondColor;
       color: #fff;
       margin: 0;
       padding: 2rem 1rem;
@@ -19,6 +21,7 @@
         a {
           text-decoration: none;
           cursor: pointer;
+          @extend %transition-app;
           &.links {
             color: #ccc;
             text-transform: uppercase;

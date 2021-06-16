@@ -8,6 +8,13 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class LandingPageComponent implements OnInit {
 
+  author = {
+    name: 'Miguel',
+    surname: 'Baumann'
+  };
+
+  features = ['Diseño', 'Maquetación', 'Desarrollo front'];
+
   constructor() { }
 
   ngOnInit() {

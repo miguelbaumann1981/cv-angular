@@ -1,9 +1,23 @@
 
 <div class="page">
+  <div class="languages">
+    <a><img src="/assets/images/spain.svg"></a>
+    <a><img src="/assets/images/uk.svg"></a>
+  </div>
 
-  <p>landing-page works!</p>
-  <p>landing-page works!</p>
-  <p>landing-page works!</p>
-  <p>landing-page works!</p>
+  <div class="content-landing">
+    <h1>
+      <span class="name">{{author.name}}</span>
+      <span class="surname">{{author.surname}}</span>
+    </h1>
+    <div class="features">
+      <ul>
+        <li *ngFor="let feature of features">
+          {{feature}}
+         <i class="fas fa-code"></i>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 

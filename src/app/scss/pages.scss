@@ -1,7 +1,13 @@
 .page {
-  padding: 20px 50px;
-  background-color: #eee;
-  border: 1px solid green;
+  padding: 2rem 2.5rem;
   width: auto;
   min-height: 100vh;
+  border-top: 1px solid #eee;
+  
+}
+
+.first-page {
+  .page {
+    border-top: 0;
+  }
 }
