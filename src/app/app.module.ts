@@ -6,6 +6,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 
+// import ngx-translate and the http loader
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+
 // PÁGINAS
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
@@ -43,11 +48,25 @@ import { PageTitleComponent } from './components/page-title/page-title.component
     AppRoutingModule,
     RouterModule,
     BrowserAnimationsModule,
-    NgxPageScrollCoreModule.forRoot({ duration: 1600 })
+    NgxPageScrollCoreModule.forRoot({ duration: 1600 }),
+    HttpClientModule,
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+            }
+        })
   ],
   providers: [
     MenuService
   ],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
+
+// required for AOT compilation
+export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
+  return new TranslateHttpLoader(http);
+}

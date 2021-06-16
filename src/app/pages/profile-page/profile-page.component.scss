@@ -1,0 +1,42 @@
+@import '../../scss/variables.scss';
+
+.content-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80vh;
+
+  .profile-description {
+    width: auto;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .35);
+    -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, .35);
+    padding: 1rem 3rem;
+    color: $thirdColor;
+    p {
+      font-size: 1.1rem;
+      line-height: 1.75rem;
+      margin: 0;
+    }
+  }
+  
+  .illustrations {
+    display: flex;
+    justify-content: space-between;
+    .single-illustration {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 30%;
+      img {
+        height: 200px;
+      }
+      h3 {
+        margin-top: 1.5rem;
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: $secondColor;
+      }
+    }
+  }
+}
+

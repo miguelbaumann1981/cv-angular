@@ -1,8 +1,8 @@
 
 <div class="page">
   <div class="languages">
-    <a><img src="/assets/images/spain.svg"></a>
-    <a><img src="/assets/images/uk.svg"></a>
+    <a (click)="useLanguage('es')"><img src="/assets/images/spain.svg"></a>
+    <a (click)="useLanguage('en')"><img src="/assets/images/uk.svg"></a>
   </div>
 
   <div class="content-landing">
@@ -13,7 +13,7 @@
     <div class="features">
       <ul>
         <li *ngFor="let feature of features">
-          {{feature}}
+          {{ feature | translate }}
          <i class="fas fa-code"></i>
         </li>
       </ul>

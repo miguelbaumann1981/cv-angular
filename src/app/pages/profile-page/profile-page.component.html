@@ -1,8 +1,19 @@
 <div class="page">
-  <page-title [iconTitle]="titlePage.icon" [textTitle]="titlePage.text"></page-title>
-  <p>profile-page works!</p>
-  <p>profile-page works!</p>
-  <p>profile-page works!</p>
-  <p>profile-page works!</p>
-  <p>profile-page works!</p>
+  <page-title [iconTitle]="titlePage.icon" [textTitle]="titlePage.text | translate"></page-title>
+
+  <div class="content-profile">
+    <div class="profile-description">
+      <p>{{ description | translate }}</p>
+    </div>
+  
+    <div class="illustrations">
+      <div class="single-illustration" *ngFor="let illustration of illustrations">
+        <img src="../../../assets/images/{{illustration.image}}" alt="{{illustration.title | translate}}">
+        <h3>{{illustration.title | translate}}</h3>
+      </div>
+     
+    </div>
+  </div>
+
+ 
 </div>

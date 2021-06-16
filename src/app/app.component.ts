@@ -3,6 +3,7 @@ import { PageScrollService, EasingLogic } from 'ngx-page-scroll-core';
 import { DOCUMENT } from '@angular/common';
 import { MenuService } from './services/menu.service';
 import { MenuOption } from './models/menuOption.model';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -32,11 +33,16 @@ export class AppComponent {
   }
 
   constructor(
+    private translate: TranslateService,
     public menuService: MenuService, 
     private pageScrollService: PageScrollService, 
     @Inject(DOCUMENT) private document: any
     ) {
+      translate.setDefaultLang('es');
+  }
 
+  useLanguage(language: string): void {
+    this.translate.use(language);
   }
 
   async getOptions() {

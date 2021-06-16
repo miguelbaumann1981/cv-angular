@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'education-page',
@@ -8,7 +9,16 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class EducationPageComponent implements OnInit {
 
-  constructor() { }
+  titlePage = {
+    icon: 'fas fa-user-graduate',
+    text: 'experience'
+  }
+
+  constructor( private translate: TranslateService ) { }
+
+  useLanguage(language: string): void {
+    this.translate.use(language);
+  }
 
   ngOnInit() {
   }

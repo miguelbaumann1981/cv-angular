@@ -1,4 +1,8 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import {TranslateService} from '@ngx-translate/core';
+
+const author: Object = '';
+const features: Object = [];
 
 @Component({
   selector: 'landing-page',
@@ -13,9 +17,15 @@ export class LandingPageComponent implements OnInit {
     surname: 'Baumann'
   };
 
-  features = ['Diseño', 'Maquetación', 'Desarrollo front'];
+  features = ['design', 'layout', 'frontDevelopment'];
 
-  constructor() { }
+  constructor(private translate: TranslateService) {
+    
+   }
+
+   useLanguage(language: string): void {
+    this.translate.use(language);
+  }
 
   ngOnInit() {
   }
