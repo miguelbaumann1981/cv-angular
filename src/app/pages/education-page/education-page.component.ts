@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { EDUCATION_DATA } from 'src/app/services/data/educationData.data';
 
 @Component({
   selector: 'education-page',
@@ -11,8 +12,10 @@ export class EducationPageComponent implements OnInit {
 
   titlePage = {
     icon: 'fas fa-user-graduate',
-    text: 'experience'
+    text: 'education'
   }
+
+  educations = EDUCATION_DATA;
 
   constructor( private translate: TranslateService ) { }
 

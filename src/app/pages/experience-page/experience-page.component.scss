@@ -1,0 +1,56 @@
+@import '../../scss/variables.scss';
+
+.content-experience {
+  display: flex;
+  flex-direction: column;
+
+  .single-experience {
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+    &:last-of-type {
+      border-bottom: 0;
+    }
+    .job-position {
+      display: flex;
+      flex-direction: column;
+      .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h3 {
+          font-size: 1.3rem;
+          color: $secondColor;
+          margin: 0;
+          text-transform: uppercase;
+          font-weight: 500;
+        }
+        .dates {
+          color: $secondColor;
+          font-weight: 500;
+          font-size: 1rem;
+          display: flex;
+          justify-content: flex-end;
+          span {
+            margin: 0 0.25rem;
+            &.no-ending {
+              display: none;
+            }
+          }
+        }
+      }
+      h4 {
+        font-size: 1.05rem;
+        color: $firstColor;
+        margin: 0.5rem 0 1rem 0;
+        font-weight: 400;
+      }
+      p {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        margin: 0;
+        color: $thirdColor;
+      }
+    }
+    
+  }
+}

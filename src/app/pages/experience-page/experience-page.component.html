@@ -1,3 +1,21 @@
 <div class="page">
   <page-title [iconTitle]="titlePage.icon" [textTitle]="titlePage.text | translate"></page-title>
+
+  <div class="content-experience">
+    <div class="single-experience" *ngFor="let experience of experiences">
+      <div class="job-position">
+        <div class="title">
+          <h3>{{experience.position | translate}}</h3>
+          <div class="dates">
+            {{experience.startDate | translate}} 
+            <span [ngClass]="{'no-ending': !experience.endDate}">-</span>
+            {{experience.endDate | translate}}
+          </div>
+        </div>
+        <h4>{{experience.company | translate}}</h4>
+        <p>{{experience.description | translate}}</p>
+      </div>
+    </div>
+  </div>
+
 </div>

@@ -1,0 +1,25 @@
+@import '../../scss/variables.scss';
+
+h2.subtitle {
+  color: $secondColor;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+
+.programming {
+  width: 100%;
+  display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+  .block {
+    width: 50%;
+    margin: 1rem 0;
+    display: flex;
+    .mat-progress-bar {
+      width: 60%;
+    }
+  }
+}
+

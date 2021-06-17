@@ -24,6 +24,9 @@ import { MenuComponent } from './components/menu/menu.component';
 import { ProgressSkillComponent } from './components/progress-skill/progress-skill.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+// ANGULAR MATERIAL
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+
 // SERVICIOS
 import { MenuService } from './services/menu.service';
 import { PageTitleComponent } from './components/page-title/page-title.component';
@@ -56,7 +59,8 @@ import { PageTitleComponent } from './components/page-title/page-title.component
                 useFactory: HttpLoaderFactory,
                 deps: [HttpClient]
             }
-        })
+        }),
+    MatProgressBarModule
   ],
   providers: [
     MenuService

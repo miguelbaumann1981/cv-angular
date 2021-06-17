@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { EXPERIENCE_DATA } from '../../services/data/experienceData.data';
+
 
 @Component({
   selector: 'experience-page',
@@ -13,6 +15,8 @@ export class ExperiencePageComponent implements OnInit {
     icon: 'fas fa-briefcase',
     text: 'experience'
   }
+
+  experiences = EXPERIENCE_DATA;
 
   constructor( private translate: TranslateService ) { }
 

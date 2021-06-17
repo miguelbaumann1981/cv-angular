@@ -20,6 +20,7 @@ export class SkillsPageComponent implements OnInit {
     this.translate.use(language);
   }
 
+
   ngOnInit() {
   }
 

@@ -1,3 +1,21 @@
 <div class="page">
   <page-title [iconTitle]="titlePage.icon" [textTitle]="titlePage.text | translate"></page-title>
+
+  <div class="content-experience">
+    <div class="single-experience" *ngFor="let education of educations">
+      <div class="job-position">
+        <div class="title">
+          <h3>{{education.title | translate}}</h3>
+          <div class="dates">
+            {{education.startDate | translate}} 
+            <span [ngClass]="{'no-ending': !education.endDate}">-</span>
+            {{education.endDate | translate}}
+          </div>
+        </div>
+        <h4>{{education.location | translate}}</h4>
+        <p>{{education.description | translate}}</p>
+      </div>
+    </div>
+  </div>
+
 </div>
