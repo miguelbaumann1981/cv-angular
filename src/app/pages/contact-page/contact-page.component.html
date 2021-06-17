@@ -1,3 +1,41 @@
 <div class="page">
   <page-title [iconTitle]="titlePage.icon" [textTitle]="titlePage.text | translate"></page-title>
+
+  <div class="content-contact">
+    <form class="example-form">
+      <mat-form-field appearance="outline">
+        <mat-label><i class="fas fa-user"></i> Nombre</mat-label>
+        <input matInput placeholder="Escriba su nombre..." required>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label><i class="fas fa-envelope"></i> Correo electrónico</mat-label>
+        <input matInput placeholder="Escriba su correo..." required>
+      </mat-form-field>
+    
+      <mat-form-field appearance="outline">
+        <mat-label><i class="fas fa-pen"></i> Mensaje</mat-label>
+        <textarea matInput placeholder="Escriba el texto..." rows="4" required></textarea>
+      </mat-form-field>
+      <div class="submit">
+        <button mat-raised-button>Enviar</button>
+      </div>
+    </form>
+
+    <div class="contact-data">
+      <ul>
+        <li>
+          <button mat-fab color="primary">
+            <i class="fas fa-times"></i>
+          </button>
+          <span class="info">contacto@miguelbaumann.es</span>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+    
+    
 </div>

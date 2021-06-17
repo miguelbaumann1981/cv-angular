@@ -4,19 +4,21 @@
   <h2 class="subtitle">Lenguajes y programas</h2>
 
   <div class="programming">
-    <div class="block">
-      <span>Hola</span><mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
-    </div>
-    <div class="block">
-      <span>Hola</span><mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
-    </div>
-    <div class="block">
-      <span>Hola</span><mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+    <div class="block" *ngFor="let skill of skills">
+      <img src="../../../assets/images/icons/{{skill.icon}}" alt="{{'icon' | translate}} {{skill.text}}">
+      <span>{{skill.text}}</span>
+      <mat-progress-bar mode="determinate" value="{{skill.percentage}}"></mat-progress-bar>
     </div>
   </div>
 
+  <h2 class="subtitle">{{'knowledges' | translate}}</h2>
+    <ul class="knowledges">
+      <li *ngFor="let knowledge of knowledges">{{knowledge | translate}}</li>
+    </ul>
 
-
-
+  <h2 class="subtitle">{{'capabilities' | translate}}</h2>
+  <ul class="knowledges">
+    <li *ngFor="let capability of capabilities">{{capability | translate}}</li>
+  </ul>
 
 </div>

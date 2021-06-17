@@ -5,8 +5,9 @@
   "profile": "Perfil",
   "experience": "Experiencia",
   "education": "Formación",
-  "skills": "Competencia",
+  "skills": "Competencias",
   "contact": "Contacto",
+  "icon": "Icono",
   "profileDescription": "Creativo digital, profesional del diseño gráfico y web, versátil y multidisciplinar, con 8 años de experiencia trabajando por cuenta ajena y como freelance. Principalmente he desarrollado proyectos corporativos de empresas, así como de particulares, y múltiples proyectos de índole personal.",
   "responsiveWebsites": "Sitios Web Responsivos",
   "webApps": "Aplicaciones Web para Escritorio y Móvil",
@@ -53,6 +54,20 @@
   "aepi": "AEPI (Asociación Programadores Informáticos)",
   "javascriptCourseAepiDescription": "100 horas lectivas y proyecto final.",
   "angularCourseUdemy": "Curso de Angular (v6+)",
-  "angularCourseUdemyDescription": "28,5 horas lectivas desarrollando pequeñas aplicaciones en Angular con las actualizaciones de la versión 7."
+  "angularCourseUdemyDescription": "28,5 horas lectivas desarrollando pequeñas aplicaciones en Angular con las actualizaciones de la versión 7.",
+  "agile": "Metodologías ágiles",
+  "rwd": "Responsive Web Design",
+  "prototype": "Prototipado",
+  "uxUi": "UX/UI",
+  "seo": "SEO",
+  "accesibility": "Accesibilidad Web",
+  "artView": "Visión artística",
+  "workTeam": "Trabajo en equipo",
+  "management": "Gestión",
+  "multitask": "Multidisciplinar",
+  "selfTaught": "Autodidacta",
+  "english": "Inglés",
+  "knowledges": "Conocimientos",
+  "capabilities": "Capacidades"
   
 }

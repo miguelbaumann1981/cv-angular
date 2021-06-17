@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
@@ -26,6 +26,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // ANGULAR MATERIAL
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 // SERVICIOS
 import { MenuService } from './services/menu.service';
@@ -60,7 +64,13 @@ import { PageTitleComponent } from './components/page-title/page-title.component
                 deps: [HttpClient]
             }
         }),
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [
     MenuService

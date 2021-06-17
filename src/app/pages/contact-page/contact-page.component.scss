@@ -1,0 +1,55 @@
+@import '../../scss/variables.scss';
+
+.content-contact {
+  display: flex;
+  form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 2rem;
+    mat-form-field {
+      mat-label {
+        i, svg {
+          margin-right: 0.35rem;
+        }
+      }
+    }
+    .submit {
+      display: flex;
+      justify-content: flex-end;
+      button {
+        width: 50%;
+        background-color: $thirdColor;
+        color: #fff;
+        padding: 0.5rem;
+        font-size: 1rem;
+        text-transform: uppercase;
+        @extend %transition-app;
+        &:hover {
+          background-color: $firstColor;
+        }
+      }
+    }
+  }
+
+  .contact-data {
+    width: 50%;
+    ul {
+      list-style: none;
+      li {
+        margin-bottom: 1rem;
+        button.mat-fab.mat-primary {
+          background-color: $firstColor;
+          margin-right: 0.75rem;
+        }
+        i, svg {
+          font-size: 1.5rem;
+        }
+        span.info {
+          color: $secondColor;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
