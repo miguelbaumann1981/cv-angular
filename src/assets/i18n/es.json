@@ -68,6 +68,18 @@
   "selfTaught": "Autodidacta",
   "english": "Inglés",
   "knowledges": "Conocimientos",
-  "capabilities": "Capacidades"
+  "capabilities": "Capacidades",
+  "submit": "Enviar",
+  "name": "Nombre",
+  "typeYourName": "Escriba su nombre",
+  "email": "Correo electrónico",
+  "typeYourEmail": "Escriba su correo electrónico",
+  "message": "Mensaje",
+  "writeYourMessage": "Escriba aquí su mensaje",
+  "noSubmitMessage": "Mensaje no enviado",
+  "noSubmitMessageParagraph1": "Ha surgido un problema de envío de su correo. Lamentamos el contratiempo.",
+  "noSubmitMessageParagraph2": "Si lo desea puede enviar el mensaje a la siguiente dirección de correo:",
+  "noSubmitMessageParagraph3": "Gracias y disculpe las molestias.",
+  "exit": "Salir"
   
 }

@@ -18,6 +18,7 @@ import { ExperiencePageComponent } from './pages/experience-page/experience-page
 import { EducationPageComponent } from './pages/education-page/education-page.component';
 import { SkillsPageComponent } from './pages/skills-page/skills-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
+import { ErrorPageComponent } from './pages/error-page/error-page.component';
 
 // COMPONENTES
 import { MenuComponent } from './components/menu/menu.component';
@@ -30,6 +31,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatDialogConfig } from '@angular/material';
 
 // SERVICIOS
 import { MenuService } from './services/menu.service';
@@ -48,7 +52,8 @@ import { PageTitleComponent } from './components/page-title/page-title.component
     ContactPageComponent,
     MenuComponent,
     ProgressSkillComponent,
-    PageTitleComponent
+    PageTitleComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,
@@ -70,10 +75,16 @@ import { PageTitleComponent } from './components/page-title/page-title.component
     FormsModule,
     ReactiveFormsModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTooltipModule,
+    MatDialogModule
   ],
   providers: [
-    MenuService
+    MenuService,
+    MatDialogConfig
+  ],
+  entryComponents: [
+    ErrorPageComponent
   ],
   bootstrap: [AppComponent]
 })

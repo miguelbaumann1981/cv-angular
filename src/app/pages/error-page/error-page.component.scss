@@ -1,0 +1,29 @@
+@import '../../scss/variables.scss';
+
+.content-error {
+  min-height: 50vh;
+  min-width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    color: lightcoral;
+    font-size: 1.8rem;
+    margin: 0 0 2rem;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  a {
+    color: #80b3ee;
+    margin: 2rem 0;
+  }
+  button {
+    width: 6rem;
+    background-color: $firstColor !important;
+    margin-top: 2rem;
+  }
+}

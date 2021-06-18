@@ -2,6 +2,10 @@
 @import './app/scss/variables.scss';
 @import './app/scss/pages.scss';
 
+* {
+  font-family: 'Raleway', sans-serif !important;
+}
+
 html, body {
   margin: 0; 
   font-size: 16px;
@@ -14,13 +18,19 @@ body {
   overflow: auto;
   min-width: auto;
   padding-left: calc(#{$menuWidth} + 2rem);
-  font-family: 'Raleway', sans-serif;;
+  
 }
 
 .mat-form-field-appearance-outline .mat-form-field-outline-thick {
   color: $firstColor !important;
 }
 
+.tooltip-xl {
+  font-size: 1.3rem !important;
+}
+.cursor-initial {
+  cursor: initial !important;
+}
 
 
 
