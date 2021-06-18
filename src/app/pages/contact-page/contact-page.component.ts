@@ -21,35 +21,27 @@ export class ContactPageComponent implements OnInit {
   personalData = [
     {
       icon: 'fas fa-envelope',
-      tooltip: '',
-      classButton: 'cursor-initial',
-      classTooltip: '',
-      text: 'contacto@miguelbaumann.es',
+      tooltip: 'contacto@miguelbaumann.es',
+      classTooltip: 'tooltip-xl',
       url: 'mailto:contacto@miguelbaumann.es',
     },
     {
       icon: 'fas fa-mobile-alt',
-      tooltip: '',
-      classButton: 'cursor-initial',
-      classTooltip: '',
-      text: '(+34) 628 681 538',
+      tooltip: '(+34) 628 681 538',
+      classTooltip: 'tooltip-xl',
       url: ''
     },
     {
       icon: 'fab fa-linkedin-in',
       tooltip: 'Linkedin',
-      classButton: '',
       classTooltip: 'tooltip-xl',
-      text: '',
       url: 'https://es.linkedin.com/in/miguel-baumann-58542347'
 
     },
     {
       icon: 'far fa-file-alt',
       tooltip: 'Portfolio',
-      classButton: '',
       classTooltip: 'tooltip-xl',
-      text: '',
       url: 'http://miguelbaumann.es/'
     }
   ];

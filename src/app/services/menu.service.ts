@@ -17,31 +17,37 @@ export class MenuService {
                 icon: 'fas fa-user',
                 title: 'Perfil',
                 href: 'profile',
+                hideText: 'changeText=true',
+                showText: 'changeText=false'
               }),
              
               new MenuOption({
                 icon: 'fas fa-briefcase',
                 title: 'Experiencia',
                 href: 'experience',
-                
+                hideText: 'changeText=true',
+                showText: 'changeText=false'
               }),
               new MenuOption({
                 icon: 'fas fa-user-graduate',
                 title: 'Formación',
                 href: 'education',
-               
+                hideText: 'changeText=true',
+                showText: 'changeText=false'
               }),
               new MenuOption({
                 icon: 'fas fa-laptop',
                 title: 'Competencias',
                 href: 'skills',
-               
+                hideText: 'changeText=true',
+                showText: 'changeText=false'
               }),
               new MenuOption({
                 icon: 'fas fa-envelope',
                 title: 'Contacto',
                 href: 'contact',
-               
+                hideText: 'changeText=true',
+                showText: 'changeText=false'
               }),
             ]
 

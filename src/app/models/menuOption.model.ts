@@ -10,4 +10,6 @@ export class MenuOption {
     public title: string;
     public icon: string;
     public href: string;
+    public hideText: string;
+    public showText: string;
 }

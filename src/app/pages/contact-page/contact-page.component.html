@@ -25,25 +25,14 @@
     <div class="contact-data">
       <ul>
         <li *ngFor="let data of personalData">
-          <div *ngIf="data.url">
              <a href="{{data.url}}" target="_blank" mat-fab color="primary"  matTooltip="{{data.tooltip}}" matTooltipPosition="right" matTooltipClass="{{data.classTooltip}}">
               <i class="{{data.icon}}"></i>
             </a>
-            <span class="info">{{data.text}}</span>
-          </div>
-
-          <div *ngIf="!data.url">
-            <a mat-fab color="primary" class="cursor-initial">
-              <i class="{{data.icon}}"></i>
-            </a>
-            <span class="info">{{data.text}}</span>
-         </div>
         </li>
       </ul>
     </div>
-
-  
   </div>
+  
   <div class="download">
     <a href="../../../assets/docs/cv.pdf" target="_blank" mat-fab color="primary" matTooltip="Descargar CV" matTooltipPosition="below" matTooltipClass="tooltip-xl">
       <i class="fas fa-download"></i>

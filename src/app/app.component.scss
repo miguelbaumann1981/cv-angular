@@ -9,32 +9,54 @@
       left: 0;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       width: $menuWidth;
       height: 100vh;
       background-color: $secondColor;
       color: #fff;
       margin: 0;
-      padding: 2rem 1rem;
+      padding: 0.5rem 1rem;
       list-style: none;
       li {
         margin: 20px 0;
         a {
           text-decoration: none;
           cursor: pointer;
-          @extend %transition-app;
           &.links {
             color: #ccc;
-            text-transform: uppercase;
             display: flex;
-            flex-direction: column;
             align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-bottom: 2rem;
+            @extend %transition-app;
+            
+            i, svg {
+              display: block;
+              font-size: 2rem;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+            }
             span {
+              color: transparent;
+              text-transform: uppercase;
               font-size: 1.15rem;
-              margin-top: 0.5rem;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
             }
             &:hover {
-              color: #fff;
+              i, svg {
+                display: none;
+              }
+              span {
+                color: #ccc;
+              }
             }
+            
           }
           &.photo {
             width: 100%;

@@ -16,6 +16,8 @@ export class AppComponent {
 
   options: MenuOption[] = [];
 
+  changeText: boolean;
+
   public myEasing: EasingLogic = (t: number, b: number, c: number, d: number): number => {
     // easeInOutExpo easing
     if (t === 0) {
@@ -39,6 +41,8 @@ export class AppComponent {
     @Inject(DOCUMENT) private document: any
     ) {
       translate.setDefaultLang('es');
+
+      this.changeText = false;
   }
 
   useLanguage(language: string): void {
