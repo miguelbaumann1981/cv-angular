@@ -34,6 +34,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatDialogConfig } from '@angular/material';
+import { MatMenuModule } from '@angular/material/menu';
 
 // SERVICIOS
 import { MenuService } from './services/menu.service';
@@ -77,7 +78,8 @@ import { PageTitleComponent } from './components/page-title/page-title.component
     MatIconModule,
     MatButtonModule,
     MatTooltipModule,
-    MatDialogModule
+    MatDialogModule,
+    MatMenuModule
   ],
   providers: [
     MenuService,

@@ -60,3 +60,24 @@
     }
   }
 }
+
+@media(max-width: 1200px) { 
+  .languages {
+    margin-bottom: 3rem;
+  }
+  .content-landing { 
+    height: 80%;
+    // h1 {
+    //   font-size: 3rem;
+    // }
+    .features {
+      margin-top: 0;
+      margin-bottom: 3rem;
+      ul {
+        li {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

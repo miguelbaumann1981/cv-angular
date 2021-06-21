@@ -2,7 +2,7 @@
 
 .layout {
   height: 100vh;
-  .menu {
+  ul.menu {
       text-align: center;
       position: fixed;
       top: 0;
@@ -71,8 +71,64 @@
             &:hover {
               opacity: 0.8;
             }
+            &.menu-xs {
+              display: none;
+            }
           }
+          
         }
       }
+      
+  }
+}
+
+
+@media(max-width: 1200px) {
+  .layout {
+    height: auto;
+    ul.menu {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: initial;
+      flex-direction: row;
+      li {
+        margin: 0;
+        a {
+          &.links {
+            display: none;
+          }
+          &.photo {
+            justify-content: flex-start;
+            img {
+              max-width: 3rem;
+              max-height: 3rem;
+              border: 2px solid rgba(255, 255, 255, 0.2);
+            }
+            &.menu-xl {
+              display: none;
+            }
+            &.menu-xs {
+              display: block;
+              color: #fff;
+              
+            }
+          }
+          
+        }
+      }
+     
+    }
+  }
+}
+
+a.mat-menu-item {
+  i, svg {
+    color: $firstColor;
+  }
+  span {
+    margin-left: 0.35rem;
   }
 }

@@ -4,6 +4,7 @@ import { DOCUMENT } from '@angular/common';
 import { MenuService } from './services/menu.service';
 import { MenuOption } from './models/menuOption.model';
 import { TranslateService } from '@ngx-translate/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -36,7 +37,8 @@ export class AppComponent {
 
   constructor(
     private translate: TranslateService,
-    public menuService: MenuService, 
+    public menuService: MenuService,
+    public router: Router, 
     private pageScrollService: PageScrollService, 
     @Inject(DOCUMENT) private document: any
     ) {
@@ -69,6 +71,10 @@ export class AppComponent {
       scrollTarget: '#' + id,
       scrollFinishListener: subscriber,
     });
+  }
+
+  public navigateTo(destination) {
+    this.router.navigate([destination]);
   }
 
 }

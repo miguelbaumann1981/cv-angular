@@ -2,7 +2,10 @@
 <div class="layout">
   <ul class="menu">
     <li>
-      <a class="photo" pageScroll href="#landing">
+      <a class="photo menu-xl" pageScroll href="#landing">
+        <img src="../assets/images/foto-cv.jpg" alt="Foto Miguel Baumann">
+      </a>
+      <a class="photo menu-xs" [matMenuTriggerFor]="menu">
         <img src="../assets/images/foto-cv.jpg" alt="Foto Miguel Baumann">
       </a>
     </li>
@@ -14,6 +17,8 @@
     </li>
   </ul>
 
+  <!-- <router-outlet></router-outlet> -->
+
 
   <landing-page id="landing" class="first-page"></landing-page>
   <profile-page id="profile"></profile-page>
@@ -22,3 +27,11 @@
   <skills-page id="skills"></skills-page>
   <contact-page id="contact"></contact-page>
 </div>
+
+
+<mat-menu #menu="matMenu">
+  <a mat-menu-item *ngFor="let item of options" pageScroll href="#{{item.href}}">
+    <i class="{{item.icon}}"></i> 
+    <span>{{item.title}}</span>
+  </a>
+</mat-menu>
