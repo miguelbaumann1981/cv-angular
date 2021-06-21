@@ -54,3 +54,23 @@
     
   }
 }
+
+@media(max-width: 600px) {
+  .content-experience {
+    .single-experience {
+      .job-position {
+        .title {
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          .dates {
+            color: #aaa;
+            font-weight: 300;
+            margin-top: 0.35rem;
+          }
+        }
+      }
+    }
+  }
+
+}

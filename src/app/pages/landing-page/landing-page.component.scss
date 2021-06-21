@@ -40,6 +40,7 @@
       list-style: none;
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
       margin: 0;
       padding: 0;
       li {
@@ -63,13 +64,13 @@
 
 @media(max-width: 1200px) { 
   .languages {
-    margin-bottom: 3rem;
+    margin: 5rem 0 3rem 0;
   }
   .content-landing { 
     height: 80%;
-    // h1 {
-    //   font-size: 3rem;
-    // }
+    h1 {
+      font-size: 3rem;
+    }
     .features {
       margin-top: 0;
       margin-bottom: 3rem;
@@ -78,6 +79,14 @@
           font-size: 1rem;
         }
       }
+    }
+  }
+}
+
+@media(max-width: 600px) { 
+  .content-landing {
+    h1 {
+      font-size: 2rem;
     }
   }
 }

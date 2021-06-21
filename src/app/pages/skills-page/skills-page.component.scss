@@ -61,7 +61,30 @@ h2.subtitle {
       font-size: 0.95rem;
       text-align: center;
       border-radius: 10rem;
-      margin-right: 1rem;
+      margin: 0.5rem 1rem 0.5rem 0;
+    }
+  }
+
+  @media(max-width: 1200px) { 
+    .programming {
+      .block {
+        z-index: -1;
+      }
+    }
+  }
+
+  @media(max-width: 600px) { 
+    .programming {
+      .block {
+        width: 100%;
+        span {
+          top: 13px;
+        }
+        .mat-progress-bar {
+          height: 30px;
+          width: 100%;
+        }
+      }
     }
   }
 

@@ -66,3 +66,24 @@
     }
   }
 }
+
+@media(max-width: 600px) { 
+  .content-contact {
+    flex-direction: column;
+    form {
+      width: 100%;
+    }
+    .contact-data {
+      width: 100%;
+      ul {
+        display: flex;
+        justify-content: flex-start;
+        margin: 2rem 0 0 0;
+        padding: 0;
+        li {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}

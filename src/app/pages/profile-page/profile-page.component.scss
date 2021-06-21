@@ -56,3 +56,18 @@
   }
  }
 
+ @media(max-width: 900px) {
+  .content-profile {
+    .profile-description {
+      padding: 1rem;
+    }
+    .illustrations {
+      flex-direction: column;
+      .single-illustration {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+    }
+   }
+  }
+
