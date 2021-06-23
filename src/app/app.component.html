@@ -39,6 +39,6 @@
 <mat-menu #menu="matMenu">
   <a mat-menu-item *ngFor="let item of options" pageScroll href="#{{item.href}}">
     <i class="{{item.icon}}"></i> 
-    <span>{{item.title}}</span>
+    <span>{{item.title | translate}}</span>
   </a>
 </mat-menu>

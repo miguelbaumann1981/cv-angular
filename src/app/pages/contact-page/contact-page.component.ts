@@ -42,7 +42,7 @@ export class ContactPageComponent implements OnInit {
       icon: 'far fa-file-alt',
       tooltip: 'Portfolio',
       classTooltip: 'tooltip-xl',
-      url: 'http://miguelbaumann.es/'
+      url: 'http://portfolio.miguelbaumann.es/'
     }
   ];
 
