@@ -8,7 +8,7 @@
   "skills": "Competencias",
   "contact": "Contacto",
   "icon": "Icono",
-  "profileDescription": "Creativo digital, profesional del diseño gráfico y web, versátil y multidisciplinar, con 8 años de experiencia trabajando por cuenta ajena y como freelance. Principalmente he desarrollado proyectos corporativos de empresas, así como de particulares, y múltiples proyectos de índole personal.",
+  "profileDescription": "Creativo digital, desarrollador, diseñador gráfico y web, versátil y multidisciplinar, con 9 años de experiencia trabajando por cuenta ajena y como freelance. Principalmente desarrollando proyectos corporativos de empresas, así como de particulares, y otros de índole personal.",
   "responsiveWebsites": "Sitios Web Responsivos",
   "webApps": "Aplicaciones Web para Escritorio y Móvil",
   "uxDesign": "Diseño UX/UI",
@@ -80,6 +80,7 @@
   "noSubmitMessageParagraph1": "Ha surgido un problema de envío de su correo. Lamentamos el contratiempo.",
   "noSubmitMessageParagraph2": "Si lo desea puede enviar el mensaje a la siguiente dirección de correo:",
   "noSubmitMessageParagraph3": "Gracias y disculpe las molestias.",
-  "exit": "Salir"
+  "exit": "Salir",
+  "downloadCV": "Descargar CV"
   
 }

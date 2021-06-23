@@ -2,6 +2,7 @@
 
 .layout {
   height: 100vh;
+  position: relative;
   ul.menu {
       text-align: center;
       position: fixed;
@@ -67,10 +68,12 @@
               max-height: 10rem;
               border: 0.5rem solid rgba(255, 255, 255, 0.2);
               border-radius: 50%;
+              @extend %transition-app;
+              &:hover {
+                  border-color: #999;
+              }
             }
-            &:hover {
-              opacity: 0.8;
-            }
+            
             &.menu-xs {
               display: none;
             }
@@ -79,6 +82,28 @@
         }
       }
       
+  }
+
+  .download {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    a.mat-fab.mat-primary {
+      background-color: rgba(255, 255, 255, 0.75);
+      color: $thirdColor;
+      height: 5rem;
+      width: 5rem;
+      line-height: 5rem;
+  
+      i, svg {
+        font-size: 2rem;
+      }
+      @extend %transition-app;
+      &:hover {
+        background-color: #aaa;
+        color: #fff;
+      }
+    }
   }
 }
 
@@ -119,6 +144,10 @@
         }
       }
      
+    }
+    .download { 
+      right: 20px;
+      bottom: 20px;
     }
   }
 }

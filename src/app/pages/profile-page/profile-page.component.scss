@@ -3,7 +3,6 @@
 .content-profile {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   height: 80vh;
 
   .profile-description {
@@ -22,6 +21,7 @@
   .illustrations {
     display: flex;
     justify-content: space-between;
+    margin-top: 6rem;
     .single-illustration {
       display: flex;
       flex-direction: column;

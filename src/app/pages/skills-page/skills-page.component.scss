@@ -5,6 +5,7 @@ h2.subtitle {
   margin: 0;
   text-transform: uppercase;
   font-size: 1.2rem;
+  padding: 0;
 }
 
 
@@ -21,18 +22,19 @@ h2.subtitle {
     align-items: center;
     position: relative;
     img {
-      height: 40px;
-      margin-right: 0.35rem;
+      width: 2.5rem;
+      margin-right: 0.5rem;
     }
     span {
       position: absolute;
-      left: 50px;
-      top: 10px;
+      left: 60px;
+      top: 12px;
       color: #fff;
       z-index: 1;
+      font-size: 0.9rem;
     }
     .mat-progress-bar {
-      height: 30px;
+      height: 2rem;
       width: 60%;
     }
 
@@ -78,10 +80,11 @@ h2.subtitle {
       .block {
         width: 100%;
         span {
-          top: 13px;
+           top: 11px;
+           left: 50px;
         }
         .mat-progress-bar {
-          height: 30px;
+          height: 2rem;
           width: 100%;
         }
       }
