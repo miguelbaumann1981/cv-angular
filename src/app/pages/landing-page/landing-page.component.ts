@@ -19,6 +19,8 @@ export class LandingPageComponent implements OnInit {
 
   features = ['design', 'layout', 'frontDevelopment'];
 
+  status: boolean = false;
+
   constructor(private translate: TranslateService) {
     
    }
@@ -26,6 +28,11 @@ export class LandingPageComponent implements OnInit {
    useLanguage(language: string): void {
     this.translate.use(language);
   }
+
+  activeMenu(event){
+    this.status = !this.status;
+    event.stopPropagation();   
+}
 
   ngOnInit() {
   }

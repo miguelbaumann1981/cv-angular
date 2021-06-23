@@ -12,12 +12,11 @@
     <li *ngFor="let item of options">
       <a class="links" pageScroll href="#{{item.href}}">
         <i class="{{item.icon}}"></i> 
-        <span>{{item.title}}</span>
+        <span>{{item.title | translate}}</span>
       </a>
     </li>
   </ul>
 
-  <!-- <router-outlet></router-outlet> -->
 
 
   <landing-page id="landing" class="first-page"></landing-page>

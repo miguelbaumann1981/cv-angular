@@ -6,6 +6,22 @@ h2 {
   text-transform: uppercase;
   font-weight: 400;
   margin: 0 0 1.5rem;
+  display: flex;
+  align-items: center;
+  .icon {
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 100%;
+    border: 1px solid $firstColor;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin-right: 0.75rem;
+    i, svg {
+      font-size: 1.6rem;
+      color: $thirdColor;
+    }
+  }
 }
 
 @media(max-width: 1200px) { 

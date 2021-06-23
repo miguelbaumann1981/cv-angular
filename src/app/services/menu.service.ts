@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { MenuOption } from '../models/menuOption.model'
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 
 @Injectable()
 export class MenuService {
   
-  constructor(private router: Router) {
+  constructor(private router: Router, private translate: TranslateService) {
   }
     
   getLeftOptions(): Promise<MenuOption[]> {
@@ -15,44 +16,38 @@ export class MenuService {
             const options = [
               new MenuOption({
                 icon: 'fas fa-user',
-                title: 'Perfil',
-                href: 'profile',
-                hideText: 'changeText=true',
-                showText: 'changeText=false'
+                title: 'profile',
+                href: 'profile'
               }),
              
               new MenuOption({
                 icon: 'fas fa-briefcase',
-                title: 'Experiencia',
-                href: 'experience',
-                hideText: 'changeText=true',
-                showText: 'changeText=false'
+                title: 'experience',
+                href: 'experience'
               }),
               new MenuOption({
                 icon: 'fas fa-user-graduate',
-                title: 'Formación',
-                href: 'education',
-                hideText: 'changeText=true',
-                showText: 'changeText=false'
+                title: 'education',
+                href: 'education'
               }),
               new MenuOption({
                 icon: 'fas fa-laptop',
-                title: 'Competencias',
-                href: 'skills',
-                hideText: 'changeText=true',
-                showText: 'changeText=false'
+                title: 'skills',
+                href: 'skills'
               }),
               new MenuOption({
                 icon: 'fas fa-envelope',
-                title: 'Contacto',
-                href: 'contact',
-                hideText: 'changeText=true',
-                showText: 'changeText=false'
+                title: 'contact',
+                href: 'contact'
               }),
             ]
 
             resolve(options);
         });
+    }
+
+    useLanguage(language: string): void {
+      this.translate.use(language);
     }
 
   navigate(menu: MenuOption) {

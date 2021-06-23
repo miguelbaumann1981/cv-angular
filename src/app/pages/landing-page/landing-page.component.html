@@ -1,8 +1,10 @@
 
 <div class="page">
   <div class="languages">
-    <a (click)="useLanguage('es')"><img src="/assets/images/spain.svg"></a>
-    <a (click)="useLanguage('en')"><img src="/assets/images/uk.svg"></a>
+    <mat-button-toggle-group>
+      <mat-button-toggle (click)="useLanguage('es')"><img src="/assets/images/spain.svg"></mat-button-toggle>
+      <mat-button-toggle (click)="useLanguage('en')"><img src="/assets/images/uk.svg"></mat-button-toggle>
+    </mat-button-toggle-group>
   </div>
 
   <div class="content-landing">

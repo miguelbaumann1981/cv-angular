@@ -9,7 +9,24 @@
     img {
       width: 1.5rem;
     }
+    &.active {
+      opacity: 0.3;
+    }
   }
+  mat-button-toggle {
+    height: 2rem;
+    width: 2rem;
+    .mat-button-toggle-button {
+      position: relative;
+      img {
+        position: absolute;
+        top: -11px;
+        left: 0;
+        width: 1.5rem;
+      }
+    }
+  }
+ 
 }
 
 .content-landing {
@@ -83,7 +100,17 @@
   }
 }
 
-@media(max-width: 600px) { 
+@media(max-width: 600px) {
+  .languages {
+    mat-button-toggle {
+      .mat-button-toggle-button {
+        img {
+          top: -8px;
+          left: 3px;
+        }
+      }
+    }
+  } 
   .content-landing {
     h1 {
       font-size: 2rem;
