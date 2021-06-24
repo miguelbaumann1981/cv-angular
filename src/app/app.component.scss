@@ -33,25 +33,27 @@
             @extend %transition-app;
             
             i, svg {
-              display: block;
+              // display: block;
               font-size: 2rem;
               position: absolute;
               top: 0;
               left: 0;
               width: 100%;
+              @extend %transition-app;
             }
             span {
               color: transparent;
               text-transform: uppercase;
-              font-size: 1.15rem;
+              font-size: 1.25rem;
               position: absolute;
               top: 0;
               left: 0;
               width: 100%;
+              @extend %transition-app;
             }
             &:hover {
               i, svg {
-                display: none;
+                color: transparent;
               }
               span {
                 color: #ccc;
