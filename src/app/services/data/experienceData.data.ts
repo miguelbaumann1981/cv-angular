@@ -23,6 +23,13 @@ export let EXPERIENCE_DATA: ExperienceDataModel[] = [
     endDate: 'august2018'
   },
   {
+    position: 'seoConsultant',
+    company: 'Ser o No Ser',
+    description: 'seoConsultantExperienceDescriptio',
+    startDate: 'april2017',
+    endDate: 'september2017'
+  },
+  {
     position: 'layoutDesigner',
     company: 'Hoonter',
     description: 'layoutDesignerExperienceHoonter',
